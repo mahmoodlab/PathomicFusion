@@ -1,10 +1,12 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis
 
+©[Mahmood Lab](www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for use for non-commercial academic purposes. 
+
 If you use this code, please cite:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen and Ming Y. Lu and Jingwen Wang and Drew F. K. Williamson and Scott J. Rodig and Neal I. Lindeman and Faisal Mahmood},
+  author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
   booktitle = {arXiv},
   year = {2019}
 }
@@ -82,15 +84,16 @@ python train_cv.py --exp_name surv --dataroot ./data/example/ --checkpoints_dir 
 ```
 
 #### 4. Reproducibility
-Please see [./data/TCGA_GBMLGG/](https://github.com/Richarizardd/pathomic_fusion/tree/master/data/TCGA_GBMLGG/) for exact data preprocessing, implementation, and experimental details.
-
+To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/Richarizardd/pathomic_fusion/tree/master/data/TCGA_GBMLGG/) 
 
 ## Issues
-
-- Please open new threads or report issues to richardchen@g.harvard.edu.
+- Please report all issues on the public forum.
 
 ## License
 This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Disclosures 
+- A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 
 ## Acknowledgments
 - This code is inspired by [SALMON](https://github.com/huangzhii/SALMON), [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), and [SCNN](https://github.com/CancerDataScience/SCNN).
@@ -101,7 +104,7 @@ If you find our work useful in your research please consider citing our paper:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen and Ming Y. Lu and Jingwen Wang and Drew F. K. Williamson and Scott J. Rodig and Neal I. Lindeman and Faisal Mahmood},
+  author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
   booktitle = {arXiv},
   year = {2019}
 }
