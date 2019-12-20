@@ -1,14 +1,14 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis
 #### [[Paper]](https://arxiv.org/abs/1912.08937)
 
-©[Mahmood Lab](www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for use for non-commercial academic purposes. 
+©[Mahmood Lab](www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
 
 If you use this code, please cite:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
   author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv},
+  booktitle = {arXiv:1912.08937},
   year = {2019}
 }
 ```
@@ -84,8 +84,8 @@ Example shown below for training a grade classification model for fusing modes A
 python train_cv.py --exp_name surv --dataroot ./data/example/ --checkpoints_dir ./checkpoints/example/ --task grad --mode AB --model_name Fusion_AB --niter 0 --niter_decay 50 --batch_size 64 --reg_type none --init_type max --lr 0.002 --weight_decay 4e-4 --gpu_ids 0
 ```
 
-#### 4. Reproducibility
-To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/Richarizardd/pathomic_fusion/tree/master/data/TCGA_GBMLGG/) 
+## Reproducibility
+To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/mahmoodlab/PathomicFusion/tree/master/data/TCGA_GBMLGG). Processed data and trained models can be downloaded [here](https://drive.google.com/drive/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf?usp=sharing).
 
 ## Issues
 - Please report all issues on the public forum.
@@ -101,12 +101,12 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 * Subsidized computing resources were provided by Nvidia and Google Cloud.
 
 ## Reference
-If you find our work useful in your research please consider citing our paper:
+If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
   author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv},
+  booktitle = {arXiv:1912.08937},
   year = {2019}
 }
 ```
