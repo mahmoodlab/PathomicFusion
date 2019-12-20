@@ -1,0 +1,57 @@
+----------------- Options ---------------
+                      GNN: GCN                           
+                 act_type: LSM                           	[default: Sigmoid]
+               batch_size: 32                            
+                    beta1: 0.5                           	[default: 0.9]
+                    beta2: 0.999                         
+          checkpoints_dir: ./checkpoints/TCGA_GBMLGG/                
+                 dataroot: ./data/TCGA_GBMLGG/         
+             dropout_rate: 0.25                          
+              epoch_count: 1                             
+                 exp_name: grad_15                       	[default: exp_name]
+                 final_lr: 0.1                           
+                 finetune: 1                             
+              fusion_type: pofusion                      
+                  gpu_ids: 0                             
+                 grph_dim: 32                            
+                grph_gate: 0                             	[default: 1]
+               grph_scale: 1                             
+                init_gain: 0.02                          
+                init_type: none                          
+          input_size_omic: 80                            
+          input_size_path: 512                           
+                label_dim: 3                             	[default: 1]
+               lambda_cox: 1                             
+               lambda_nll: 1                             
+               lambda_reg: 0.0003                        
+                       lr: 0.0001                        	[default: 0.002]
+                lr_policy: linear                        
+                  measure: 1                             
+                    mmhid: 64                            
+                     mode: graphomic                     	[default: omic]
+                mode_name: graphomic_fusion             	[default: omic]
+                    niter: 10                            	[default: 0]
+              niter_decay: 20                            	[default: 25]
+                 omic_dim: 32                            
+                omic_gate: 1                             
+               omic_scale: 2                             	[default: 1]
+           optimizer_type: adam                          
+                 path_dim: 32                            
+                path_gate: 1                             
+               path_scale: 1                             
+                 patience: 0.005                         
+            pooling_ratio: 0.2                           
+              print_every: 0                             
+                 reg_type: omic                          
+                  save_at: 20                            
+                     skip: 0                             
+                     task: grad                          	[default: surv]
+                   useRNA: 0                             
+                    useSN: 1                             
+             use_bilinear: 1                             
+                use_edges: 1                             
+               use_rnaseq: 0                             
+         use_vgg_features: 1                             	[default: 0]
+                  verbose: 1                             
+             weight_decay: 0.0004                        
+----------------- End -------------------

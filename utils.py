@@ -3,6 +3,8 @@ import math
 import os
 import pickle
 import re
+import warnings
+warnings.filterwarnings('ignore')
 
 # Numerical / Array
 import lifelines
@@ -24,6 +26,8 @@ import seaborn as sns
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split, KFold
 from sklearn.metrics import average_precision_score, auc, f1_score, roc_curve, roc_auc_score
+from sklearn.preprocessing import LabelBinarizer
+
 from scipy import interp
 mpl.rcParams['axes.linewidth'] = 3 #set the value globally
 
@@ -599,7 +603,6 @@ def poolSurvTestPD(ckpt_name='./checkpoints/TCGA_GBMLGG/surv_15_rnaseq/', model=
 
 def getAggHazardCV(ckpt_name='./checkpoints/TCGA_GBMLGG/surv_15_rnaseq/', model='pathgraphomic_fusion', split='test', agg_type='Hazard_mean'):
     result = []
-    print(model)
     
     ignore_missing_moltype = 1 if 'omic' in model else 0
     ignore_missing_histype = 1 if 'grad' in ckpt_name else 0

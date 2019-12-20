@@ -1,0 +1,44 @@
+----------------- Options ---------------
+                      GNN: GCN                           
+                 act_type: Sigmoid                       	[default: Tanh]
+               batch_size: 8                             	[default: 32]
+          checkpoints_dir: ./checkpoints/TCGA_GBMLGG/                
+                 dataroot: ./data/TCGA_GBMLGG/         
+             dropout_rate: 0.25                          
+              epoch_count: 1                             
+                 exp_name: surv_15_rnaseq                 [default: exp_name]
+                 final_lr: 0.1                           
+                 finetune: 0                             
+                  gpu_ids: 2                             	[default: 0]
+                 grph_dim: 32                            
+                init_gain: 0.02                          
+                init_type: none                          	[default: max]
+          input_size_omic: 320                            
+          input_size_path: 512                           
+                label_dim: 1                             
+               lambda_cox: 1                             
+               lambda_nll: 1                             
+               lambda_reg: 0.0                           	[default: 1e-05]
+                       lr: 0.0005                        	[default: 0.002]
+                lr_policy: linear                        
+                  measure: 1                             	[default: 0]
+                    mmhid: 128                           
+                     mode: path                          	[default: omic]
+               model_name: path                          	[default: omic]
+                    niter: 0                             
+              niter_decay: 50                            	[default: 25]
+                 omic_dim: 32                            
+           optimizer_type: adam                          
+                 path_dim: 32                            
+                 patience: 0.005                         
+            pooling_ratio: 0.2                           
+              print_every: 0                             
+                 reg_type: none                          	[default: all]
+                  save_at: 20                            
+                     task: surv                          
+                   useRNA: 0                             
+                    useSN: 1                             
+                use_edges: 1                             
+                  verbose: 1                             	[default: 0]
+             weight_decay: 0.0004                        
+----------------- End -------------------
