@@ -12,6 +12,10 @@ If you use this code, please cite:
   year = {2019}
 }
 ```
+## Overview
+We propose a simple and scalable method for integrating histology images and -omic data using attention gating and tensor fusion. Histopathology images can be processed using CNNs or GCNs for parameter efficiency or a combination of the the two. The setup is adaptable for integrating multiple -omic modalities with histopathology and can be used for improved diagnostic, prognostic and theriputic response determinations. 
+
+<img src="https://github.com/mahmoodlab/PathomicFusion/blob/master/main_fig.jpg" width="1024"/>
  
 ## Setup
 
@@ -23,7 +27,7 @@ If you use this code, please cite:
 - torch_geometric=1.3.0
 
 ### 2. Code Base Structure
-Code base organization is borrowed and inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), with most of the modularity for "running experiments on different datasets" removed for simplicity.
+The code base structure is explained below: 
 - **train_cv.py**: Cross-validation script for training unimodal and multimodal networks. This script will save evaluation metrics and predictions on the train + test split for each epoch on every split in **checkpoints**.
 - **test_cv.py**: Script for testing unimodal and unimodal networks on only the test split.
 - **train_test.py**: Contains the definitions for "train" and "test". 
@@ -97,8 +101,8 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 - A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 
 ## Acknowledgments
-- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON), [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), and [SCNN](https://github.com/CancerDataScience/SCNN).
-* Subsidized computing resources were provided by Nvidia and Google Cloud.
+- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN), code base structure was inspired by , [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+* Subsidized computing resources for this project were provided by Nvidia and Google Cloud. 
 
 ## Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
