@@ -1,4 +1,5 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis
+#### [[Paper]](https://arxiv.org/abs/1912.08937)
 
 ©[Mahmood Lab](www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for use for non-commercial academic purposes. 
 
