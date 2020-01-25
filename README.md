@@ -1,16 +1,21 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis
+#### [[Paper]](https://arxiv.org/abs/1912.08937)
 
-©[Mahmood Lab](www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for use for non-commercial academic purposes. 
+© [Mahmood Lab](http://www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
 
 If you use this code, please cite:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
   author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv},
+  booktitle = {arXiv:1912.08937},
   year = {2019}
 }
 ```
+## Overview
+We propose a simple and scalable method for integrating histology images and -omic data using attention gating and tensor fusion. Histopathology images can be processed using CNNs or GCNs for parameter efficiency or a combination of the the two. The setup is adaptable for integrating multiple -omic modalities with histopathology and can be used for improved diagnostic, prognostic and theriputic response determinations. 
+
+<img src="https://github.com/mahmoodlab/PathomicFusion/blob/master/main_fig.jpg" width="1024"/>
  
 ## Setup
 
@@ -22,7 +27,7 @@ If you use this code, please cite:
 - torch_geometric=1.3.0
 
 ### 2. Code Base Structure
-Code base organization is borrowed and inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), with most of the modularity for "running experiments on different datasets" removed for simplicity.
+The code base structure is explained below: 
 - **train_cv.py**: Cross-validation script for training unimodal and multimodal networks. This script will save evaluation metrics and predictions on the train + test split for each epoch on every split in **checkpoints**.
 - **test_cv.py**: Script for testing unimodal and unimodal networks on only the test split.
 - **train_test.py**: Contains the definitions for "train" and "test". 
@@ -83,8 +88,8 @@ Example shown below for training a grade classification model for fusing modes A
 python train_cv.py --exp_name surv --dataroot ./data/example/ --checkpoints_dir ./checkpoints/example/ --task grad --mode AB --model_name Fusion_AB --niter 0 --niter_decay 50 --batch_size 64 --reg_type none --init_type max --lr 0.002 --weight_decay 4e-4 --gpu_ids 0
 ```
 
-#### 4. Reproducibility
-To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/Richarizardd/pathomic_fusion/tree/master/data/TCGA_GBMLGG/) 
+## Reproducibility
+To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/mahmoodlab/PathomicFusion/tree/master/data/TCGA_GBMLGG). Processed data and trained models can be downloaded [here](https://drive.google.com/drive/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf?usp=sharing).
 
 ## Issues
 - Please report all issues on the public forum.
@@ -96,16 +101,16 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 - A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 
 ## Acknowledgments
-- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON), [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix), and [SCNN](https://github.com/CancerDataScience/SCNN).
-* Subsidized computing resources were provided by Nvidia and Google Cloud.
+- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN), code base structure was inspired by , [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+* Subsidized computing resources for this project were provided by Nvidia and Google Cloud. 
 
 ## Reference
-If you find our work useful in your research please consider citing our paper:
+If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 ```
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
   author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv},
+  booktitle = {arXiv:1912.08937},
   year = {2019}
 }
 ```
