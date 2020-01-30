@@ -101,7 +101,7 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 - A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 
 ## Acknowledgments
-- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN), code base structure was inspired by , [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+- This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN), code base structure was inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 * Subsidized computing resources for this project were provided by Nvidia and Google Cloud. 
 
 ## Reference
