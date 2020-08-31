@@ -8,8 +8,8 @@ If you use this code, please cite:
 @inproceedings{chen2019pathomicfusion,
   title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
   author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv:1912.08937},
-  year = {2019}
+  booktitle = {IEEE Transactions on Medical Imaging},
+  year = {2020}
 }
 ```
 ## Overview
