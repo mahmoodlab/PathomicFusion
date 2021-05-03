@@ -79,7 +79,7 @@ def train(opt, data, device, k):
         #print('learning rate = %.7f' % lr)
 
         if opt.measure or epoch == (opt.niter+opt.niter_decay - 1):
-            loss_epoch /= len(train_loader.dataset)
+            loss_epoch /= len(train_loader)
 
             cindex_epoch = CIndex_lifeline(risk_pred_all, censor_all, survtime_all) if opt.task == 'surv' else None
             pvalue_epoch = cox_log_rank(risk_pred_all, censor_all, survtime_all)  if opt.task == 'surv' else None
