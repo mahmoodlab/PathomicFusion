@@ -1,22 +1,28 @@
 # Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis
 #### [[IEEE Transactions on Medical Imaging]](https://ieeexplore.ieee.org/document/9186053) [[arXiv]](https://arxiv.org/abs/1912.08937) [[Talk]](https://www.youtube.com/watch?v=TrjGEUVX5YE&feature=youtu.be)
 
+
+## Updates:
+* 05/26/2021: Updated Google Drive with all models and processed data for TCGA-GBMLGG and TCGA-KIRC. found using the [following link](https://drive.google.com/drive/u/1/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf)
+* 
 © [Mahmood Lab](http://www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
 
-If you use this code, please cite:
+If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 ```
-@inproceedings{chen2019pathomicfusion,
-  title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {IEEE Transactions on Medical Imaging},
-  year = {2020}
+@article{chen2020pathomic,
+  title={Pathomic fusion: an integrated framework for fusing histopathology and genomic features for cancer diagnosis and prognosis},
+  author={Chen, Richard J and Lu, Ming Y and Wang, Jingwen and Williamson, Drew FK and Rodig, Scott J and Lindeman, Neal I and Mahmood, Faisal},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE}
 }
 ```
+
 ## Overview
 We propose a simple and scalable method for integrating histology images and -omic data using attention gating and tensor fusion. Histopathology images can be processed using CNNs or GCNs for parameter efficiency or a combination of the the two. The setup is adaptable for integrating multiple -omic modalities with histopathology and can be used for improved diagnostic, prognostic and theriputic response determinations. 
 
 <img src="https://github.com/mahmoodlab/PathomicFusion/blob/master/main_fig.jpg" width="1024"/>
- 
+
 ## Setup
 
 ### 1. Prerequisites
@@ -103,14 +109,3 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 ## Acknowledgments
 - This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN), code base structure was inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 * Subsidized computing resources for this project were provided by Nvidia and Google Cloud. 
-
-## Reference
-If you find our work useful in your research or if you use parts of this code please consider citing our paper:
-```
-@inproceedings{chen2019pathomicfusion,
-  title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen, Ming Y. Lu, Jingwen Wang, Drew F. K. Williamson, Scott J. Rodig, Neal I. Lindeman, Faisal Mahmood},
-  booktitle = {arXiv:1912.08937},
-  year = {2019}
-}
-```
