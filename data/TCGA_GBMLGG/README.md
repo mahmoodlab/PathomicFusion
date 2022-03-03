@@ -1,13 +1,5 @@
 # Reproducibility of "Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis"
 
-If you use this code, please cite:
-```
-@inproceedings{chen2019pathomicfusion,
-  title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen and Ming Y. Lu and Jingwen Wang and Drew F. K. Williamson and Scott J. Rodig and Neal I. Lindeman and Faisal Mahmood},
-  booktitle = {arXiv},
-  year = {2019}
-}
 ```
 ## Setup
 ### 1. Processed Dataset
@@ -135,12 +127,14 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICE
 * Subsidized computing resources were provided by Nvidia and Google Cloud.
 
 ## Reference
-If you find our work useful in your research please consider citing our paper:
+If you find our work useful in your research, please consider citing our paper at:
 ```
-@inproceedings{chen2019pathomicfusion,
-  title     = {Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
-  author    = {Richard J. Chen and Ming Y. Lu and Jingwen Wang and Drew F. K. Williamson and Scott J. Rodig and Neal I. Lindeman and Faisal Mahmood},
-  booktitle = {arXiv},
-  year = {2019}
+@article{chen2020pathomic,
+  title={Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
+  author={Chen, Richard J and Lu, Ming Y and Wang, Jingwen and Williamson, Drew FK and Rodig, Scott J and Lindeman, Neal I and Mahmood, Faisal},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE}
 }
 ```
+© Mahmood Lab - This code is made available under the GPLv3 License and is available for non-commercial academic purposes.
