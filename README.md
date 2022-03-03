@@ -21,7 +21,7 @@
 ```
 </details>
 
-**Summary:** We propose a simple and scalable method for integrating histology images and -omic data using attention gating and tensor fusion. Histopathology images can be processed using CNNs or GCNs for parameter efficiency or a combination of the the two. The setup is adaptable for integrating multiple -omic modalities with histopathology and can be used for improved diagnostic, prognostic and theriputic response determinations. 
+**Summary:** We propose a simple and scalable method for integrating histology images and -omic data using attention gating and tensor fusion. Histopathology images can be processed using CNNs or GCNs for parameter efficiency or a combination of the the two. The setup is adaptable for integrating multiple -omic modalities with histopathology and can be used for improved diagnostic, prognostic and therapeutic response determinations. 
 
 <img src="https://github.com/mahmoodlab/PathomicFusion/blob/master/main_fig.jpg" width="1024"/>
 
