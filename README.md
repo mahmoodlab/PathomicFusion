@@ -41,7 +41,7 @@
 
   
 ## Updates
-* 05/26/2021: Updated Google Drive with all models and processed data for TCGA-GBMLGG and TCGA-KIRC. found using the [following link](https://drive.google.com/drive/u/1/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf)
+* 05/26/2021: Updated Google Drive with all models and processed data for TCGA-GBMLGG and TCGA-KIRC. found using the [following link](https://drive.google.com/drive/u/1/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf). The data made available for TCGA-GBMLGG are the **same ROIs** used by [Mobadersany et al.](https://github.com/PathologyDataScience/SCNN)
 
 ## Setup
 
