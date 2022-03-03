@@ -1,6 +1,5 @@
 # Reproducibility of "Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis"
 
-```
 ## Setup
 ### 1. Processed Dataset
 Processed data can be downloaded from our [Google Drive](https://drive.google.com/drive/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf?usp=sharing).
