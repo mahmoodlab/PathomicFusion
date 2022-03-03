@@ -25,7 +25,18 @@
 
 <img src="https://github.com/mahmoodlab/PathomicFusion/blob/master/main_fig.jpg" width="1024"/>
 
-## Updates:
+## Community / Follow-Up Work :)
+<table>
+<tr>
+<td>GitHub Repositories / Projects</td>
+<td>
+<a href="https://github.com/Liruiqing-ustc/HFBSurv" target="_blank">★</a>
+</td>
+</tr>
+</table>
+
+  
+## Updates
 * 05/26/2021: Updated Google Drive with all models and processed data for TCGA-GBMLGG and TCGA-KIRC. found using the [following link](https://drive.google.com/drive/u/1/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf)
 
 ## Setup
