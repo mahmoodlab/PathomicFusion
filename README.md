@@ -31,6 +31,10 @@
 <td>GitHub Repositories / Projects</td>
 <td>
 <a href="https://github.com/Liruiqing-ustc/HFBSurv" target="_blank">★</a>
+<a href="https://github.com/mahmoodlab/PORPOISE" target="_blank">★</a>
+<a href="https://github.com/TencentAILabHealthcare/MLA-GNN" target="_blank">★</a>
+<a href="https://github.com/zcwang0702/HGPN" target="_blank">★</a>
+<a href="https://github.com/isfj/GPDBN" target="_blank">★</a>
 </td>
 </tr>
 </table>
