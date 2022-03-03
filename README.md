@@ -106,3 +106,16 @@ To reporduce the results in our paper and for exact data preprocessing, implemen
 - This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details. A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 - This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN). Code base structure was inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 - Subsidized computing resources for this project were provided by Nvidia and Google Cloud. 
+- If you find our work useful in your research, please consider citing our paper at:
+
+```bash
+@article{chen2020pathomic,
+  title={Pathomic Fusion: An Integrated Framework for Fusing Histopathology and Genomic Features for Cancer Diagnosis and Prognosis},
+  author={Chen, Richard J and Lu, Ming Y and Wang, Jingwen and Williamson, Drew FK and Rodig, Scott J and Lindeman, Neal I and Mahmood, Faisal},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2020},
+  publisher={IEEE}
+}
+```
+
+© [Mahmood Lab](http://www.mahmoodlab.org) - This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
