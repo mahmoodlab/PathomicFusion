@@ -117,6 +117,10 @@ python train_cv.py --exp_name surv --dataroot ./data/example/ --checkpoints_dir 
 ## Reproducibility
 To reporduce the results in our paper and for exact data preprocessing, implementation, and experimental details please follow the instructions here: [./data/TCGA_GBMLGG/](https://github.com/mahmoodlab/PathomicFusion/tree/master/data/TCGA_GBMLGG). Processed data and trained models can be downloaded [here](https://drive.google.com/drive/folders/1swiMrz84V3iuzk8x99vGIBd5FCVncOlf?usp=sharing).
 
+## Issues
+- Please open new threads or report issues directly (for urgent blockers) to richardchen@g.harvard.edu.
+- Immediate response to minor issues may not be available.
+
 ## Licenses, Usages, and Acknowledgements
 - This project is licensed under the GNU GPLv3 License - see the [LICENSE.md](LICENSE.md) file for details. A provisional patent on this work has been filed by the Brigham and Women's Hospital.
 - This code is inspired by [SALMON](https://github.com/huangzhii/SALMON) and [SCNN](https://github.com/CancerDataScience/SCNN). Code base structure was inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
