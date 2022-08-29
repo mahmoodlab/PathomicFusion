@@ -353,9 +353,11 @@ def CoxLoss(survtime, censor, hazard_pred, device):
             R_mat[i,j] = survtime[j] >= survtime[i]
 
     R_mat = torch.FloatTensor(R_mat).to(device)
+    censor = censor.reshape(-1)
     theta = hazard_pred.reshape(-1)
     exp_theta = torch.exp(theta)
-    loss_cox = -torch.mean((theta - torch.log(torch.sum(exp_theta*R_mat, dim=1))) * censor)
+    loss_cox = (theta - torch.log(torch.sum(exp_theta*R_mat, dim=1))) * censor
+    loss_cox = -(loss_cox.sum() / censor.sum()) # mean over samples who experienced the event only (where censor==1)
     return loss_cox
 
 
